@@ -8,16 +8,40 @@ html {
   box-sizing: inherit;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
-}
-
-.text {
-  text-transform: none;
 }
 
 .visually-hidden {
@@ -55,6 +79,11 @@ body {
 }
 
 /* ---------HEADER---------- */
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .logo-web {
   font-family: "Raleway";
@@ -105,7 +134,25 @@ body {
   color: var(--main-color);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
 /* ---------FOOTER---------- */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.list-item {
+  text-transform: none;
+  margin-top: 9px;
+}
 
 .background {
   background-color: var(--background-block);
@@ -150,6 +197,11 @@ body {
 
 /* -------MAIN STUDIO------- */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .background-hero {
   background-color: var(--background-block);
 }
@@ -161,9 +213,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 30px;
 }
 
 .button-order {
+  display: inline-block;
   cursor: pointer;
   background-color: var(--main-color);
   font-family: inherit;
@@ -172,6 +226,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  min-width: 152px;
+  padding: 10px 32px;
 }
 
 .button-order:focus,
@@ -201,6 +257,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
 }
 
 .background-team {
