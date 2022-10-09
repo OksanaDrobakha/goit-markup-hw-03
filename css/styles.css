@@ -5,7 +5,6 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
 }
 
 p,
@@ -33,8 +32,8 @@ address {
 }
 
 img {
+  display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .list {
@@ -225,19 +224,31 @@ body {
 
 /* -------MAIN STUDIO------- */
 
-.section {
+.section-function {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.section-work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .background-hero {
   background-color: var(--background-block);
-}
-
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  align-items: center;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title-main {
@@ -255,8 +266,6 @@ body {
 }
 
 .button-order {
-  display: inline-block;
-  cursor: pointer;
   background-color: var(--main-color);
   font-family: inherit;
   font-weight: 700;
@@ -264,10 +273,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  min-width: 152px;
   padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 4px;
 }
 
 .button-order:focus,
@@ -309,9 +316,6 @@ body {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 50px;
-  max-width: 366px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .team-section-title {
@@ -322,9 +326,6 @@ body {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 50px;
-  max-width: 264px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .work-container {
@@ -338,6 +339,7 @@ body {
 
 .background-cards {
   background-color: var(--background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-container {
@@ -345,8 +347,9 @@ body {
   gap: 30px;
 }
 
-.team-foto {
-  margin-bottom: 30px;
+.team-card {
+  text-align: center;
+  padding: 30px 0;
 }
 
 .team-name {
@@ -379,6 +382,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .button-filter:hover,
@@ -400,7 +404,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  min-width: 370px;
   margin-bottom: 4px;
 }
 
@@ -409,16 +412,15 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  min-width: 370px;
 }
 
 .portfolio-link {
-  max-width: 370px;
   padding: 20px 24px;
   margin: 0;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
-
-/* .card-link {} */
 
 .portfolio-title:focus,
 .portfolio-text:focus {
@@ -433,6 +435,5 @@ body {
 }
 
 .portfolio-card {
-  min-width: calc((100%-60px) / 3);
-  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 60px) / 3);
 }
