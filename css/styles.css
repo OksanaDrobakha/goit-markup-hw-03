@@ -83,12 +83,12 @@ body {
 .header-list {
   display: flex;
   gap: 50px;
-  margin-right: 344px;
 }
 
 .header-contact {
   display: flex;
   gap: 50px;
+  margin-left: auto;
 }
 
 .logo-web {
@@ -163,7 +163,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 /* ---------FOOTER---------- */
@@ -195,6 +194,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  display: inline-block;
 }
 
 .address:hover,
