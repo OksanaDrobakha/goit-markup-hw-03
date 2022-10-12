@@ -155,6 +155,9 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+}
+
+.header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -246,8 +249,8 @@ body {
 .background-hero {
   background-color: var(--background-block);
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .title-main {
